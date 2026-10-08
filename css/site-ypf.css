@@ -1,0 +1,19 @@
+
+/* =========================================================
+   MODO LOCAL / OFFLINE - reparaciones del proyecto
+   ========================================================= */
+.local-header-inner{max-width:1200px;margin:0 auto;min-height:76px;padding:10px 24px;display:flex;align-items:center;gap:28px;box-sizing:border-box}
+.yl-header{background:#fff;border-bottom:1px solid #e6e6e6;position:relative;z-index:50}
+.local-logo img{display:block;width:92px;height:auto;object-fit:contain}
+.local-nav{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;flex-wrap:wrap}
+.local-nav a,.local-header-button{color:#0063be;text-decoration:none;font-weight:700;padding:10px 14px;border-radius:4px;transition:.2s ease}
+.local-nav a:hover,.local-header-button:hover{background:#0063be;color:#fff}
+.local-header-button{background:#0063be;color:#fff;white-space:nowrap}
+.local-footer{background:#f1f3f5;margin-top:40px;padding:34px 24px 0;color:#333}
+.local-footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.local-footer-logo{width:90px;height:auto}
+.local-footer-inner p{margin:6px 0 0;color:#555}
+.local-footer-links{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap}
+.local-footer-links a{color:#0063be;text-decoration:none;font-weight:600}
+.local-footer-bottom{max-width:1200px;margin:28px auto 0;padding:16px 0;border-top:1px solid #d7d7d7;font-size:13px;color:#666}
+@media(max-width:760px){.local-header-inner{flex-wrap:wrap;justify-content:center;padding:12px 16px}.local-logo{margin-right:auto}.local-header-button{font-size:14px}.local-nav{order:3;width:100%;flex:none}.local-nav a{padding:8px 9px;font-size:14px}.local-footer-links{margin-left:0}}

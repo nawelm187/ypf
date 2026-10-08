@@ -1,0 +1,231 @@
+/* #region SLIDER */
+.video-frame-modal__video-case {
+    background-color: #1e1e1e66;
+}
+.video-frame-modal__video-case > div {
+    position: relative;
+    z-index: 1;
+}
+
+iframe.video-frame-modal__video-player {
+    width: auto;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+.video-frame-modal__close-video {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0; 
+    color: #0451dd;
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    width: 64px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* #endregion SLIDER */
+
+
+/* #region BANNER RUTA*/
+.banner-hero__centrado .yl-container {
+    display: flex;
+    justify-content: center;
+}
+.banner-hero__centrado .banner {
+    padding: 0;
+}
+
+.banner-hero__centrado .banner__bg-image {
+    width: 100%;
+    height: 395px;
+}
+
+.banner-hero__centrado .banner__containe {
+    position: absolute;
+    top: 0px;
+    display: block;
+    width: 570px;
+    height: auto;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+
+.banner-hero__centrado .banner__title {
+    font-family: 'din-black';
+    font-size: 32px;
+    display: block;
+    line-height: 30px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.banner-hero__centrado .banner__content p {
+    font-family: 'din-medium';
+    font-size: 20px;
+    display: block;
+    line-height: 25px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.banner-hero__centrado .banner__links {
+    justify-content: center;
+}
+
+.banner-hero__centrado .advanced-link__link {
+    display: inline-block;
+    zoom: 1;
+    background: #fffcfc;
+    color: #384f52;
+    font-family: 'din-bold';
+    font-size: 13px;
+    line-height: 14px;
+    padding: 12px 20px 10px 20px;
+    text-decoration: none;
+}
+.ypfcom__banner-section--main .advanced-link__link:hover svg {
+    fill: #0063be;
+
+}
+.carousel-banners .glider .banner .yl-container .banner__tag-text {
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+    .banner-hero__centrado .banner__bg-image {
+        width: auto;
+    }
+
+    .banner-hero__centrado .banner__containe {
+        width: 90%;
+        padding: 40px 0 0 0;
+    }
+}
+
+/* #endregion BANNER RUTA*/
+
+/* #region TARJETAS GENERICAS*/
+
+.card-list__container .generic-card .generic-card__links a {
+    color: #333a91;
+    border-color: #333a91;
+}
+
+.card-list__container .generic-card .generic-card__links a:hover {
+    background-color: #333a91;
+    color: #fff;
+}
+@media (max-width: 991px) {
+    .ypfcom__list-cards-section .generic-card .generic-card__content {
+        height: 90px;
+    }
+    .ypfcom__list-cards-section .generic-card__img-container--left + .generic-card__body {
+        width: 100%;
+        padding: 0 0 0 1rem;
+    }
+}
+/* #endregion TARJETAS GENERICAS*/
+
+
+/* #region Panels / Carrousel / Images */
+
+.ypfcom__panels-carousel-image {
+  display: flex;
+  align-items: center;
+  height: 196px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ypfcom__panels-carousel-image::after {
+  content: "";
+  background-image: url(https://ypf.com/yl-cdn/images/ds2/patterns/pattern_dots--full.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -33px;
+  bottom: -30px;
+  width: 336px;
+  height: 61px;
+}
+
+.ypfcom__panels-carousel-image .glider-track {
+  gap: 8px;
+}
+
+.ypfcom__panels-carousel-image .glider-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  position: relative;
+}
+
+.ypfcom__panels-carousel-image .glider-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(https://ypf.com/yl-cdn/images/ds2/icons/icon_arrow-top-right--brand.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.ypfcom__panels-carousel-image .glider-slide:first-child {
+  margin-inline-start: var(--border-view-distance);
+}
+
+.ypfcom__panels-carousel-image .glider-slide:last-child {
+  margin-inline-end: var(--border-view-distance);
+}
+
+.ypfcom__panels-carousel-image .glider-contain__pagination {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .ypfcom__panels-carousel-image .glider-slide {
+    opacity: .4;
+    transition: opacity .3s ease-in;
+  }
+
+  .ypfcom__panels-carousel-image .glider-slide:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ypfcom__panels-carousel-image::after {
+    right: -129px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ypfcom__panels-carousel-image::after {
+    right: -113px;
+  }
+
+  .ypfcom__panels-carousel-image .glider-slide:first-child {
+    margin-inline-start: 24px;
+  }
+
+  .ypfcom__panels-carousel-image .glider-slide:last-child {
+    margin-inline-end: 24px;
+  }
+}
+
+/* #endregion Panels / Carrousel / Images */
